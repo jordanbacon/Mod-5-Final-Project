@@ -16,12 +16,8 @@ ActiveRecord::Schema.define(version: 2019_09_09_160305) do
   enable_extension "plpgsql"
 
   create_table "items", force: :cascade do |t|
-    t.string "name"
-    t.string "img_url"
-    t.string "description"
-    t.integer "price"
-    t.integer "quantity"
-    t.string "classification"
+    t.string "date"
+    t.integer "number_of_passengers"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -29,12 +25,8 @@ ActiveRecord::Schema.define(version: 2019_09_09_160305) do
   end
 
   create_table "purchaseditems", force: :cascade do |t|
-    t.string "name"
-    t.string "img_url"
-    t.string "description"
-    t.integer "price"
-    t.integer "quantity"
-    t.string "classification"
+    t.string "date"
+    t.integer "number_of_passengers"
     t.integer "order_id"
   end
 

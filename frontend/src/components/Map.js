@@ -47,8 +47,8 @@ class SimpleMap extends React.Component {
         style = { style }
         google = { this.props.google }
         // onClick = { this.onMapClick }
-        zoom = { 12 }
-        initialCenter = {{ lat: 31.114181, lng: -97.743882 }}
+        zoom = { 16 }
+        initialCenter = {{ lat: 34.166335, lng: -119.228362 }}
         mapTypeControl={false}
         disableDefaultUI={true}
       >

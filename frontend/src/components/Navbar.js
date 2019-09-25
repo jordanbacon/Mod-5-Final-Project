@@ -10,7 +10,7 @@ export default class Navbar extends Component {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <Link className="navbar-brand" to="/">MILITARY SUPPLY </Link>
+                    <Link className="navbar-brand" to="/">TheraSEA</Link>
                     
                     <div className="navbar-nav ml-auto" id="navbarNavAltMarkup">
                     {(localStorage.token)  ?
@@ -19,10 +19,10 @@ export default class Navbar extends Component {
                                 <Link className="nav-item nav-link" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-item nav-link" to="/shop">Shop</Link>
+                                <Link className="nav-item nav-link" to="/shop">Schedule a Cruise</Link>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-item nav-link" to="/cart">Cart</Link>
+                            <Link className="nav-item nav-link" to="/cart">Cruise Cart</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-item nav-link" href="/" onClick={this.logout}>Logout</a>

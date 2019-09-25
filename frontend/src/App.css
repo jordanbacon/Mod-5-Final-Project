@@ -1,16 +1,16 @@
 /*  --------- GLOBAL-----------*/
 
 .btn-success{
-  background-color: rgb(153, 49, 49) !important;
-  border-color: rgb(153, 49, 49) !important;
+  background-color: rgb(6, 59, 158) !important;
+  border-color: rgb(6, 59, 158) !important;
   outline: none !important;
   box-shadow: none !important;
   color: #FFF !important
 }
 
 .btn-success:hover, .btn-success:active, .btn-success:visited {
-  background-color: rgb(194, 62, 62) !important;
-  border-color: rgb(194, 62, 62) !important;
+  background-color: rgb(6, 59, 158) !important;
+  border-color: rgb(6, 59, 158) !important;
   outline: none !important;
   box-shadow: none !important;
   color: #FFF !important
@@ -57,7 +57,7 @@
 
 body
 {
-  background-color: #EEECDE !important;
+  background-color: #d5e9ef !important;
 
 }
 
@@ -68,7 +68,7 @@ body
 
 .navbar
 {
-  background-color: #819359 !important;
+  background-color: #6189be !important;
   position: sticky;
 }
 
@@ -86,7 +86,7 @@ body
   font-size: 30px;
   margin-left: 45px;
   text-shadow: 2px 2px #000000;
-  color: #efe7d5 !important;
+  color: #d5e9ef !important;
   padding: 5px !important
 
 }
@@ -108,7 +108,7 @@ body
 {
   float: right  !important;
   text-shadow: 1px 1px #000000;
-  color: #efe7d5 !important;
+  color: #d5e9ef !important;
 }
 
 .nav-item
@@ -129,10 +129,10 @@ body
 
 .top
 {
-  height: calc(100vh - 65px)!important;
+  height: calc(100vh - 20px)!important;
   /* width: calc(100vw) !important; */
-  background-color: #5a6346 !important;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://demo.gridgum.com/wordpress/military/wp-content/uploads/2015/04/slide05.jpg);
+  background-color: #6189be !important;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://www.gannett-cdn.com/-mm-/044fc73935fa273ae6d15e26a80f1fa3ca007a6b/c=166-0-2826-2000/local/-/media/2015/08/11/USATODAY/USATODAY/635748890457461941-Fleming-55-underway-CREDIT-Nickalous-OG-Flaherty.jpg?width=520&height=390&fit=crop);
   background-size: auto;
 }
 
@@ -141,7 +141,7 @@ body
 
   height: 200px;
   width: 500px;
-  background: linear-gradient(rgba(129, 147, 89, 0.5),rgba(129, 147, 89, 0.5));
+  background: linear-gradient(rgba(37, 99, 134, 0.5),rgba(37, 99, 134, 0.5));
   transform: translate(15%, 260%);
   z-index: 10;
   font-family: 'Oswald', sans-serif;
@@ -152,14 +152,14 @@ body
 
 .darkblock h2
 {
-  color: #efe7d5;
+  color: #d5e9ef;
   text-shadow: 1px 1px #000000;
 
 }
 
 .darkblock h4
 {
-  color: #efe7d5;
+  color: #d5e9ef;
   padding:10px;
   padding-left:60px;
   padding-right:60px;
@@ -170,7 +170,7 @@ body
 
 .category
 {
-  background-color: #efe7d5;
+  background-color: #d5e9ef;
   height: 600px
 }
 
@@ -179,7 +179,7 @@ body
   padding-top: 40px;
   font-family: 'Anton', sans-serif;
   font-size: 40px;
-  color: #819359;
+  color: #6189be;
   text-shadow: 1px 1px #000000;
 
 }
@@ -224,9 +224,9 @@ body
 .how
 {
   /* background-color: #819359 !important; */
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
-  height: 400px;
-  color: #efe7d5;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://s3.envato.com/files/b59924be-c9ca-4b72-9d63-f486a2826a15/inline_image_preview.jpg);
+  height: 333px;
+  color: #d5e9ef;
   padding-left:100px;
   padding-right:100px
 }
@@ -245,7 +245,7 @@ body
 .test-desc
 {
   font-family: 'Oswald', sans-serif;
-  height: 70px;
+  /* height: 70px; */
   font-size: 26px;
   text-shadow: 1px 1px #000000;
 
@@ -261,7 +261,7 @@ body
 
 .about
 {
-  background-color: rgba(239,231,213);
+  background-color: rgb(190, 231, 241);
   /* background-image: linear-gradient(rgba(239,231,213,0.6),rgba(239,231,213,0.6)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg); */
   height: 410px;
   position: relative
@@ -274,7 +274,7 @@ body
   font-size: 40px;
   padding-top: 70px;
   padding-bottom: 30px;
-  color: #819359;
+  color: #6189be;
   text-shadow: 1px 1px #000000;
 }
 
@@ -310,7 +310,7 @@ body
 .itemsheader
 {
   height: calc(70vh - 65px)!important;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.wallpaperscraft.com/image/military_china_parade_mrls_31449_1600x900.jpg) !important;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(http://www.channelislandsharbor.org/wp-content/uploads/2017/10/Channel-Islands-Marina1_listing.jpg) !important;
   /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.wallpaperscraft.com/image/cat_fluffy_jacket_military_66330_1600x900.jpg) !important; */
   background-size: cover;
   background-position: center;
@@ -321,7 +321,7 @@ body
 {
   margin-top: 70px;
   font-family: 'Oswald', sans-serif;
-  color:#efe7d5;
+  color:#d5e9ef;
   font-size: 100px;
 }
 
@@ -333,7 +333,7 @@ body
 
 .cardContainer
 {
-  background-color: #EEECDE !important;
+  background-color: rgb(184, 227, 240) !important;
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-column-gap: 10px;
@@ -356,15 +356,15 @@ body
   animation-direction: reverse;  
   animation-fill-mode: reverse; */
   box-shadow: 0 1rem 1rem rgba(0,0,0,.175);
-  height: 500px;
+  height: 250px;
 
 }
 
 .card img 
 {
-  height: 260px;
+  /* height: 260px;
   border-top-left-radius: 1em !important;
-  border-top-right-radius: 1em !important;
+  border-top-right-radius: 1em !important; */
   /* overflow: hidden; */
   /* object-fit: contain */
 }
@@ -414,13 +414,13 @@ body
 {
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
-  color: rgb(153, 49, 49)
+  color: rgb(6, 59, 158)
 
 }
 
 #cartremove
 {
-  color: rgb(153, 49, 49);
+  color: rgb(6, 59, 158);
   width: 30px !important;
   text-align: right
 }
@@ -440,7 +440,7 @@ body
 
 .shoppingCart
 {
-  background-color: #819359 !important;
+  background-color: #6189be !important;
   width: 80%;
   justify-items: center;
 }
@@ -527,7 +527,7 @@ form
 
 .footer
 {
-  background-color: #819359 !important;
+  background-color: #6189be !important;
   height: 70px;
   text-align: center;
 }
@@ -538,6 +538,6 @@ form
   font-size: 18px;
   margin: 0;
   transform: translate(0, 80%);
-  color: #efe7d5;
+  color: #d5e9ef;
   text-shadow: 1px 1px #000000;
 }
