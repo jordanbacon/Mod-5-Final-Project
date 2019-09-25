@@ -4,30 +4,13 @@ import SimpleMap from './Map'
 
 export default class Home extends Component {
 
-    // state = {
-    //     bg: {}
-    // }
-
-
-    // move = (e) => {
-    //     let bg = {
-    //         backgroundPositionX: -e.screenX / 25 + "px",
-    //         backgroundPositionY: -e.screenY / 25 + "px"
-    //     }
-    //     this.setState({
-    //         bg: bg
-    //     })
-    // }
-
     render() {
         return(
             <div>
                 <div className="top">
-                 {/* style={this.state.bg} onMouseMove={(e)=> this.move(e)} */}
                     <div className="darkblock" >
                         <h2>BOOK TODAY!</h2>
-                        {/* <img src="https://demo.gridgum.com/wordpress/military//wp-content/uploads/2015/04/logo-khaki.png"/>
-                        <h4>GEAR UP WITH A ROCKET LAUNCHER AND SOME YEEZY'S</h4> */}
+                        <img src="https://static.thenounproject.com/png/1546383-200.png"/>
                     </div>
                 </div>
 
@@ -78,7 +61,7 @@ export default class Home extends Component {
                         <h6 className="test-name"><strong>Info about Boat: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</strong></h6>
                         </div>
                         <div class="col">
-                        <h4 className="test-desc"><em>Name</em></h4>
+                        <h4 className="test-desc"><em>More Info</em></h4>
                         <br/>
                         <h6 className="test-name"><strong>Picture</strong></h6>
                         </div>
@@ -91,16 +74,12 @@ export default class Home extends Component {
                             <div className = "row">
                                 <div className="col-">
                                     <h5 className="aboutsub">Address:</h5>
-                                    {/* <h5 className="aboutsub">Hours:</h5> */}
                                     <h5 className="aboutsub">Email:</h5>
-                                    {/* <h5 className="aboutsub">Sales:</h5> */}
                                     <h5 className="aboutsub">Phone:</h5>
                                 </div>
                                 <div className="col">
                                     <h5 className="aboutsub1">Channel Islands Harbor Marina</h5>
-                                    {/* <h5 className="aboutsub1">10AM - 8PM | M-F</h5> */}
                                     <h5 className="aboutsub1">example@gmail.com</h5>
-                                    {/* <h5 className="aboutsub1">1-800-MSUPPLY</h5> */}
                                     <h5 className="aboutsub1">1-800-THERASEA</h5>
                                 </div>
                             </div>

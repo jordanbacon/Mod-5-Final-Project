@@ -11,7 +11,7 @@ export default class CartItems extends Component {
                     <div className="card-body">
                         <div className="row">
                             <div className="col-sm-">
-                            <img className="cartimg" src={this.props.item.img_url}/>
+                            <strong>{this.props.item.date}</strong>
                             </div>
                             <div className="col-lg">
                                 <div className="row">
@@ -38,9 +38,6 @@ export default class CartItems extends Component {
                                     <option>9</option>
                                     <option>10</option>
                                 </select>
-                            </div>
-                            <div className="col-" id="cartprice">
-                            ${price}
                             </div>
                             <div className="col-" id="cartremove">
                             <strong onClick={() => this.props.removeItem(this.props.item)}>X</strong>

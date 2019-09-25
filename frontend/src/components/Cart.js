@@ -16,16 +16,16 @@ export default class Cart extends Component {
         }
     }
 
-    totalPrice = () => {
-        let totalPrice = 0
+    totalPassengers = () => {
+        let totalPassengers = 0
         if (this.props.cart.length !== 0){
             for (let i=0; i < this.props.cart.length; i++) {
-                totalPrice = totalPrice + (this.props.cart[i].number_of_passengers)
+                totalPassengers = totalPassengers + (this.props.cart[i].number_of_passengers)
             }
         } else {
-            totalPrice = 0
+            totalPassengers = 0
         }
-        return totalPrice
+        return totalPassengers
     }
 
     quantityChange = (e, item) => {
@@ -70,7 +70,7 @@ export default class Cart extends Component {
         .then(orders => {
             let orderLast = orders.filter(order => order.id == this.state.order.id)
             this.setState({
-                readOrder: orderLast[0].purchaseditems,
+                readOrder: orderLast[0].bookeditems,
                 isLoading: !this.state.isLoading
             })
         })
@@ -80,11 +80,7 @@ export default class Cart extends Component {
     let items =  this.props.cart.map(item => {
         return { 
         name: item.date,
-        // img_url: item.img_url,
-        // description: item.description,
-        // price: item.price,
         quantity: item.number_of_passengers,
-        // classification: item.classification,
         order_id: 1,
         }
     })
@@ -98,7 +94,7 @@ export default class Cart extends Component {
         },
         body: JSON.stringify({
             user_id: localStorage.id,
-            purchaseditems_attributes: items
+            bookeditems_attributes: items
             })        
         })
     .then(res => res.json())
@@ -135,11 +131,7 @@ export default class Cart extends Component {
             return { 
             id: item.id,
             name: item.date,
-            // img_url: item.img_url,
-            // description: item.description,
-            // price: item.price,
             quantity: item.number_of_passengers,
-            // classification: item.classification
             }
         })
         fetch(`http://localhost:3000/api/v1/orders/${this.state.order.id}`,{
@@ -150,7 +142,7 @@ export default class Cart extends Component {
             },
             body: JSON.stringify({
                 user_id: localStorage.id,
-                purchaseditems_attributes: orderItems
+                bookeditems_attributes: orderItems
             })        
         })
         .then(res => res.json())
@@ -188,7 +180,7 @@ export default class Cart extends Component {
                                                 : <li className="list-group-item title" id="cartempty"><span>Your booking was deleted</span></li>
                                             :
                                             <p>Loading...</p>} 
-                                        <li className="list-group-item title" id="yourtotal">Number of Passengers: {this.totalPrice()} </li>
+                                        <li className="list-group-item title" id="yourtotal">Number of Passengers: {this.totalPassengers()} </li>
                                         <li className="list-group-item title"><button style={{'margin-left': '5px', 'margin-right': '5px'}} className="btn btn-success" onClick={this.deleteOrder}>Delete</button><button style={{'margin-left': '5px', 'margin-right': '5px'}} className="btn btn-success" onClick={this.updateOrder}>Update & Finalize</button><button style={{'margin-left': '5px', 'margin-right': '5px'}} className="btn btn-success" onClick={this.finalize}>Finalize</button></li>
                                     </ul>
                                 :
@@ -198,7 +190,7 @@ export default class Cart extends Component {
                                         this.props.cart.map(item => <li className="list-group-item"><CartItems quantityChange={this.props.quantityChange} item={item} removeItem={this.props.removeItem}/></li>)
                                         : <li className="list-group-item title" id="cartempty"><span>Your cart is empty</span></li>
                                         } 
-                                        <li className="list-group-item title" id="yourtotal">Number of Passengers: {this.totalPrice()} </li>
+                                        <li className="list-group-item title" id="yourtotal">Number of Passengers: {this.totalPassengers()} </li>
                                         <li className="list-group-item title"><Link to={{pathname: '/order'}}><button className="btn btn-success" onClick={this.createOrder}>Checkout</button></Link></li>
                                     </ul>
                             :
