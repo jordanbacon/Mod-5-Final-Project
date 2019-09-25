@@ -10,7 +10,7 @@
 User.destroy_all
 Order.destroy_all
 Item.destroy_all
-Purchaseditem.destroy_all
+Bookeditem.destroy_all
 
 u1 = User.create(name: "User1", email: "user1@gmail.com", password: "password")
 u2 = User.create(name: "User 2", email: "user2@gmail.com", password: "password")
@@ -27,9 +27,9 @@ i1 = Item.create(date:"August 3, 2019", number_of_passengers: 5)
 i1 = Item.create(date:"May 12, 2019", number_of_passengers: 4)
 i1 = Item.create(date:"July 25, 2019", number_of_passengers: 6)
 
-pi1 = Purchaseditem.create(date: "July 20, 2019", number_of_passengers: 6, order_id: o1.id)
-pi2 = Purchaseditem.create(date: "June 5, 2019", number_of_passengers: 5, order_id: o2.id)
-pi3 = Purchaseditem.create(date: "April 19, 2019", number_of_passengers: 4, order_id: o3.id)
-pi4 = Purchaseditem.create(date: "August 3, 2019", number_of_passengers: 5, order_id: o1.id)
-pi5 = Purchaseditem.create(date: "May 12, 2019", number_of_passengers: 4, order_id: o2.id)
-pi6 = Purchaseditem.create(date: "July 25, 2019", number_of_passengers: 6, order_id: o3.id)
+pi1 = Bookeditem.create(date: "July 20, 2019", number_of_passengers: 6, order_id: o1.id)
+pi2 = Bookeditem.create(date: "June 5, 2019", number_of_passengers: 5, order_id: o2.id)
+pi3 = Bookeditem.create(date: "April 19, 2019", number_of_passengers: 4, order_id: o3.id)
+pi4 = Bookeditem.create(date: "August 3, 2019", number_of_passengers: 5, order_id: o1.id)
+pi5 = Bookeditem.create(date: "May 12, 2019", number_of_passengers: 4, order_id: o2.id)
+pi6 = Bookeditem.create(date: "July 25, 2019", number_of_passengers: 6, order_id: o3.id)

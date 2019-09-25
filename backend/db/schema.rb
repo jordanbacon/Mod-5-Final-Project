@@ -15,6 +15,12 @@ ActiveRecord::Schema.define(version: 2019_09_09_160305) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "bookeditems", force: :cascade do |t|
+    t.string "date"
+    t.integer "number_of_passengers"
+    t.integer "order_id"
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "date"
     t.integer "number_of_passengers"
@@ -22,12 +28,6 @@ ActiveRecord::Schema.define(version: 2019_09_09_160305) do
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
-  end
-
-  create_table "purchaseditems", force: :cascade do |t|
-    t.string "date"
-    t.integer "number_of_passengers"
-    t.integer "order_id"
   end
 
   create_table "users", force: :cascade do |t|

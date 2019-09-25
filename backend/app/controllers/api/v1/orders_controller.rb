@@ -2,12 +2,12 @@ class Api::V1::OrdersController < ApplicationController
 
     def index
         @orders = Order.all
-        render json: @orders, include: :purchaseditems
+        render json: @orders, include: :bookeditems
     end
 
     def show
         @order = Order.find(params[:id])
-        render json: @order, include: :purchaseditems
+        render json: @order, include: :bookeditems
     end
 
     def create
@@ -30,7 +30,7 @@ class Api::V1::OrdersController < ApplicationController
     private
 
     def order_params
-        params.require(:order).permit(:user_id, purchaseditems_attributes: [:id, :name, :img_url, :description, :price, :quantity, :classification, :order_id])
+        params.require(:order).permit(:user_id, bookeditems_attributes: [:id, :name, :img_url, :description, :price, :quantity, :classification, :order_id])
     end
 
 end

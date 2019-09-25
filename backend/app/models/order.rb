@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-    has_many :purchaseditems
+    has_many :bookeditems
     belongs_to :user
-    accepts_nested_attributes_for :purchaseditems
+    accepts_nested_attributes_for :bookeditems
 end
