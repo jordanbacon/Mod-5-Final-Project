@@ -3,8 +3,6 @@ import CartItems from './CartItems'
 // import CartList from './CartList'
 import { Link } from 'react-router-dom'
 
-
-
 export default class Cart extends Component {
 
     constructor(){
@@ -129,7 +127,7 @@ export default class Cart extends Component {
     updateOrder = () => {
         let orderItems =  this.state.readOrder.map(item => {
             return { 
-            id: item.id,
+            // id: item.id,
             name: item.date,
             quantity: item.number_of_passengers,
             }
@@ -155,7 +153,6 @@ export default class Cart extends Component {
             // })
         })
         this.finalize()
-
     }
 
     render() {
@@ -201,9 +198,7 @@ export default class Cart extends Component {
                                     } 
                                     <li className="list-group-item title"><a href="/shop"><button className="btn btn-success">Schedule</button></a></li>
                                 </ul>
-
                             }
-
                             </div><br/><br/>
                         </div>
                         <div className="col col-">

@@ -50,7 +50,6 @@ export default class Home extends Component {
                     <Link to="/shop"><button className="btn-lg btn-success" type="submit">Book Now</button></Link>
                     :<Link to="/signin"><button className="btn-lg btn-success" type="submit">Book Now</button></Link>
                     }
-                    
                 </div>
                 <div className="how">
                     <h1>Info</h1>

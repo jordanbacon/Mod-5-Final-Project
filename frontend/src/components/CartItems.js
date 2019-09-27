@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 
-
-
 export default class CartItems extends Component {
     render() {
         let price = this.props.item.quantity * this.props.item.price
@@ -33,10 +31,6 @@ export default class CartItems extends Component {
                                     <option>4</option>
                                     <option>5</option>
                                     <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
                                 </select>
                             </div>
                             <div className="col-" id="cartremove">

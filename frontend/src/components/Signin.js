@@ -35,10 +35,7 @@ export default class Signin extends Component {
               this.props.loggedIn()
           })
         }
-    
-
       }
-
 
     render() {
         return(

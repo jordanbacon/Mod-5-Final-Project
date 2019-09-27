@@ -1,7 +1,6 @@
 import React from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
 
-
 class SimpleMap extends React.Component {
 
   constructor(props) {
@@ -71,5 +70,3 @@ class SimpleMap extends React.Component {
 export default GoogleApiWrapper({
     apiKey: "" /*       AIzaSyCMsUZdVxb-1l7OCVKWTIWMt1BlyGUQEh0      */
 })(SimpleMap)
-
-
