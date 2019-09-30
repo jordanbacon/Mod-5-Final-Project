@@ -26,6 +26,4 @@ class BookedItemsController < ApplicationController
     #     @booked_params
     # end
 
-
-
 end

@@ -10,7 +10,6 @@ class Api::V1::UsersController < ApplicationController
         render json: @user, include: :orders
     end
 
-
     # private
 
     # def user_params

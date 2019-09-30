@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::API
 
-
-
     before_action :check_authentication
     
     def encode_token(payload) # for token generation
@@ -47,11 +45,6 @@ class ApplicationController < ActionController::API
       def logged_in?
         !!current_user
       end
-
-
-
-
-
 
 end
 
