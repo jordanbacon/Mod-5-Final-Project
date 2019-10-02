@@ -8,9 +8,9 @@ export default class Home extends Component {
         return(
             <div>
                 <div className="top">
-                    <div className="darkblock" >
-                        <h2>BOOK TODAY!</h2>
-                        <img src="https://static.thenounproject.com/png/1546383-200.png"/>
+                    <div className="darkblock">
+                        <h2>The sea, once it casts its spell, holds one in its net of wonder forever.<br></br>- Jacques Yves Cousteau</h2>
+                        {/* <img src="https://static.thenounproject.com/png/1546383-200.png"/> */}
                     </div>
                 </div>
 
@@ -52,17 +52,20 @@ export default class Home extends Component {
                     }
                 </div>
                 <div className="how">
-                    <h1>Info</h1>
+                    <h1>About Us</h1>
                     <div class="row">
                         <div class="col">
                         <h4 className="test-desc"><em>The Boat</em></h4>
                         <br/>
-                        <h6 className="test-name"><strong>Info about Boat: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</strong></h6>
+                        <h6 className="test-name"><strong>TheraSEA is a 44’ Motor Yacht with a long and varied history. She began her life as a fishing vessel on the Great Lakes, but has been all over the Atlantic and Pacific, including making passage through the Panama Canal. After a long life of work, TheraSEA was renovated and has served as a recreational vessel for many years now. </strong></h6>
                         </div>
                         <div class="col">
-                        <h4 className="test-desc"><em>More Info</em></h4>
+                        <h4 className="test-desc"><em>The Program</em></h4>
+                        {/* <div className="top">
+                        <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/19884238_1026733174134694_165860053339451581_n.jpg?_nc_cat=110&_nc_oc=AQmIw5GFydAT2H_qx6jP6XRJ10vwIi7dHauZ6YRZf_bmqPp4VWLTBBaImWYkIqDbvM8&_nc_ht=scontent-dfw5-1.xx&oh=906349bc918057835963669bacd83a3e&oe=5E30F623"></img>
+                        </div> */}
                         <br/>
-                        <h6 className="test-name"><strong>Picture</strong></h6>
+                        <h6 className="test-name"><strong>TheraSEA is available for day cruises from Oxnard, CA to the Channel Islands for any patient referred by Member Hospitals. A typical cruise is a 4-5 hour outing from Oxnard to Anacapa Island and back. During the leisurely cruise we often observe dolphin, whale and seal activity. If requested far enough in advance, the trip can be tailored to accommodate those patients with an interest in fishing.</strong></h6>
                         </div>
                     </div>                                               
                 </div>

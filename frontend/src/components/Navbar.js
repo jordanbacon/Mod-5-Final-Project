@@ -10,7 +10,7 @@ export default class Navbar extends Component {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <Link className="navbar-brand" to="/">TheraSEA</Link>
+                    <Link className="navbar-brand" to="/">TheraSEA<img src="https://static.thenounproject.com/png/1546383-200.png"/></Link>
                     
                     <div className="navbar-nav ml-auto" id="navbarNavAltMarkup">
                     {(localStorage.token)  ?

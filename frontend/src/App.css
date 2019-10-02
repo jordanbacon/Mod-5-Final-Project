@@ -132,8 +132,10 @@ body
   height: calc(100vh - 20px)!important;
   /* width: calc(100vw) !important; */
   background-color: #6189be !important;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://www.gannett-cdn.com/-mm-/044fc73935fa273ae6d15e26a80f1fa3ca007a6b/c=166-0-2826-2000/local/-/media/2015/08/11/USATODAY/USATODAY/635748890457461941-Fleming-55-underway-CREDIT-Nickalous-OG-Flaherty.jpg?width=520&height=390&fit=crop);
-  background-size: auto;
+  background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1662092_648693455272003_5930956969111326129_n.jpg?_nc_cat=101&_nc_oc=AQmW2boKnFV5BhyznuGFknDSJ8FN9TXdaLMQRPnfRTUgH7EEApSQmKY3gdg-P8AO0Ks&_nc_ht=scontent-dfw5-1.xx&oh=98c701ed2fc7e0822ae758918beb3a2e&oe=5DF787D0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .darkblock
@@ -146,7 +148,7 @@ body
   z-index: 10;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  padding-top:15px;
+  padding-top:35px;
   padding-bottom:10px
 }
 
@@ -234,10 +236,10 @@ body
 .how h1
 {
   padding-top: 40px;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 40px;
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   text-shadow: 2px 2px #000000;
   
 }
@@ -254,7 +256,7 @@ body
 .test-name
 {
   font-family: 'Oswald', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-shadow: 1px 1px #000000;
 
 }
@@ -356,7 +358,7 @@ body
   animation-direction: reverse;  
   animation-fill-mode: reverse; */
   box-shadow: 0 1rem 1rem rgba(0,0,0,.175);
-  height: 250px;
+  height: 220px;
 
 }
 

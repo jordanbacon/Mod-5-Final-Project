@@ -127,7 +127,7 @@ export default class Cart extends Component {
     updateOrder = () => {
         let orderItems =  this.state.readOrder.map(item => {
             return { 
-            // id: item.id,
+            id: item.id,
             name: item.date,
             quantity: item.number_of_passengers,
             }
