@@ -77,8 +77,8 @@ export default class Cart extends Component {
     createOrder = () => {
     let items =  this.props.cart.map(item => {
         return { 
-        name: item.date,
-        quantity: item.number_of_passengers,
+        date: item.date,
+        number_of_passengers: item.number_of_passengers,
         order_id: 1,
         }
     })
@@ -128,8 +128,8 @@ export default class Cart extends Component {
         let orderItems =  this.state.readOrder.map(item => {
             return { 
             id: item.id,
-            name: item.date,
-            quantity: item.number_of_passengers,
+            date: item.date,
+            number_of_passengers: item.number_of_passengers,
             }
         })
         fetch(`http://localhost:3000/api/v1/orders/${this.state.order.id}`,{
