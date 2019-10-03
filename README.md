@@ -1,8 +1,9 @@
-TheraSEA Booking App
+# TheraSEA Booking App
 Welcome to the TheraSEA booking app, where participating hospitals, charities, and individuals may schedule a date to go on a TheraSEA cruise. To get started, see below: 
 
-Usage Guide
-Initial Setup
+## Usage Guide
+
+### Initial Setup
 1. Fork and clone this repository to your local machine.
 2. CD into the newly cloned directory
 3. Type bundle install in the terminal to get all the required gems
